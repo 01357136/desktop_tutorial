@@ -54,7 +54,7 @@
             <option>-</option>
             <option>*</option>
             <option>/</option>
-            <option>random</option>
+            <option>%</option>
         </select>
         <input id = "input2" type = "number" placeholder = "input second number" required />
         <button id = "displayButton">Calculate</button>
@@ -95,8 +95,8 @@
             else if(operator == "*"){
                 Result.innerHTML = number1 * number2;
             }
-            else if(operator == "random"){
-                Result.innerHTML = number1 - number2;
+            else if(operator == "%"){
+                Result.innerHTML = number1 % number2;
             }
             else{
                 if(number2 === 0){
